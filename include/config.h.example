@@ -1,0 +1,23 @@
+// config.h.example をコピーして config.h を作成し、実際の値を設定する。
+// config.h は .gitignore 済み。シークレットをコミットしないこと。
+#pragma once
+
+// Wi-Fi (2.4GHz 帯であること)
+#define WIFI_SSID "your-ssid"
+#define WIFI_PASSWORD "your-password"
+
+// Music Assistant サーバー (miscpi)
+#define MA_HOST "miscpi.mtkg"
+#define MA_PORT 8095
+
+// MA Web UI (設定 -> ユーザー) で発行した Bearer トークン
+#define MA_TOKEN "your-long-lived-token"
+
+// 対象プレイヤー (HomePod) の player_id
+#define MA_PLAYER_ID "ap12068013d66a"
+
+// 音量の上限 (誤タップで爆音になるのを防ぐ)
+#define MAX_VOLUME 60
+
+// プレイリスト一覧から除外する名前 (完全一致。カンマ区切りで複数指定可)
+#define BROWSE_EXCLUDE_PLAYLISTS {"お気に入りの曲"}

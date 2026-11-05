@@ -1,0 +1,7 @@
+.pio/
+.DS_Store
+include/config.h
+.claude/
+.codex/
+.vscode/
+*.swp
